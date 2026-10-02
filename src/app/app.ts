@@ -1,13 +1,28 @@
 import { Component } from '@angular/core';
 import { EnTete } from './composants/en-tete/en-tete';
-import { ListeCours } from './composants/liste-cours/liste-cours';
+import { ListeCoursComponent } from './composants/liste-cours/liste-cours';
 import { PiedPage } from './composants/pied-page/pied-page';
+import { DetailCoursComponent } from './composants/detail-cours/detail-cours';
+import { Cours } from './composants/liste-cours/liste-cours';
 
 @Component({
   selector: 'app-root',
-  imports: [EnTete, ListeCours, PiedPage],
+  standalone: true,
+  imports: [
+    EnTete,
+    ListeCoursComponent,
+    DetailCoursComponent,
+    PiedPage
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  styleUrl: './app.css'
 })
 export class App {
+
+  coursSelectionne: Cours | null = null;
+
+  onSelectionCours(c: Cours) {
+    this.coursSelectionne = c;
+  }
+
 }
