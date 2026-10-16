@@ -4,7 +4,6 @@ import { ListeCoursComponent } from './composants/liste-cours/liste-cours';
 import { PiedPage } from './composants/pied-page/pied-page';
 import { DetailCoursComponent } from './composants/detail-cours/detail-cours';
 import { Cours } from './composants/liste-cours/liste-cours';
-
 @Component({
   selector: 'app-root',
   standalone: true,

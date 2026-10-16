@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './en-tete.css',
   templateUrl: './en-tete.html',
 })
-export class EnTete {}
+export class EnTete {
+  titre:string='application de gestion de cours';
+  urlLogo:string='https://brandslogos.com/wp-content/uploads/images/large/angular-icon-logo.png';
+
+}

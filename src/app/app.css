@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: block;
+}
+
+section {
+    width: 75%;
+    min-height: 300px;
+    text-align: center;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    min-height: 300px;
+    text-align: center;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    clear: both;
+}

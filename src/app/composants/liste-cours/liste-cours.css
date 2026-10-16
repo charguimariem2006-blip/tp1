@@ -2,3 +2,69 @@
   border: 2px solid #dd0031;
   background-color: #fdecef;
 }
+.controles {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.controles input,
+.controles select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.liste-cours {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.carte-cours {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.carte-cours.actif {
+  border: 2px solid #2563eb;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge--frontend {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge--backend {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge--langage {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge--autre {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.liste-vide {
+  padding: 15px;
+  text-align: center;
+  color: #b91c1c;
+}
