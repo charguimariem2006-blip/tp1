@@ -59,7 +59,7 @@
 
       <p>Durée : {{ c.duree }}</p>
 
-      <p>Places disponibles : {{ c.places }}</p>
+      <p>{{ c.places | placesRestantes:10 }}</p>
 
     </article>
 
