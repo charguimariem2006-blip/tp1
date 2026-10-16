@@ -4,6 +4,7 @@ import { FiltreCoursPipe } from '../../pipes/filtre-cours-pipe';
 import { UpperCasePipe } from '@angular/common';
 import { TriCoursPipe } from '../../pipes/tri-cours-pipe';
 import { PlacesRestantesPipe } from '../../pipes/places-restantes-pipe';
+import { TronquerPipe } from '../../pipes/tronquer-pipe';
 export interface Cours {
   titre: string;
   categorie: string;
@@ -19,7 +20,8 @@ export interface Cours {
   FiltreCoursPipe,
   TriCoursPipe,
   UpperCasePipe,
-   PlacesRestantesPipe
+  PlacesRestantesPipe,
+  TronquerPipe
 ],
   templateUrl: './liste-cours.html',
   styleUrl: './liste-cours.css'
