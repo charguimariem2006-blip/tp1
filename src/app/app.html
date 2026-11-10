@@ -1,11 +1,33 @@
 <header><app-en-tete></app-en-tete></header>
-<section><app-liste-cours
-  (coursSelectionne)="onSelectionCours($event)">
-</app-liste-cours></section>
-<aside><app-detail-cours
-  [cours]="coursSelectionne">
-</app-detail-cours></aside>
+<nav>
+  <a routerLink="/" routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">
+    Accueil
+  </a>
 
+  <a routerLink="/cours" routerLinkActive="active" >
+    Cours
+  </a>
+
+  @if (session.connecte()) {
+<a routerLink="/mes-inscriptions" routerLinkActive="actif">
+    Mes inscriptions
+  </a>
+  <button (click)="deconnecter()">
+    Déconnexion ({{ session.nom() }})
+  </button>
+
+} @else {
+
+  <a routerLink="/connexion" routerLinkActive="actif">
+    Connexion
+  </a>
+
+}
+</nav>
+<main>
+  <router-outlet></router-outlet>
+</main>
 <footer>
   @defer (on viewport) {
 
